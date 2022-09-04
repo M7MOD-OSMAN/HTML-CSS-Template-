@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* general styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, 'sans-serif', monospace;
+}
+
+button {
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.pd-y {
+  padding: 120px 0;
+}
+.section-header {
+  text-align: center;
+}
+
+.section-header .section-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.line {
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin: 0 auto 70px auto;
+  background-color: #6195ff;
+}
+.header-content {
+  /* overflow: hidden; */
+}
+
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+  width: 40%;
+  float: left;
+}
+
+.header .logo img {
+  width: 25%;
+}
+.header .nav {
+  float: left;
+  width: 60%;
+  text-align: right;
+}
+
+.header .nav li {
+  display: inline-block;
+}
+.header .nav > li > a {
+  color: white;
+  display: block;
+  padding: 20px 15px;
+  font-weight: 500;
+}
+
+.header .nav > li > a.active::after,
+.header .nav > li > a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #6195ff;
+  transition: width 0.2s;
+}
+.header .nav > li > a::after {
+  width: 0;
+}
+
+.header .nav > li > a.active::after {
+  width: 100%;
+}
+.header .nav > li > a:hover::after {
+  width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  background-color: aquamarine;
+  width: 60px;
+  left: 0;
+  top: 70px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-menu ul li {
+  color: #fff;
+  padding: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.blog-content {
+  overflow: hidden;
+}
+
+.blog-item {
+  float: left;
+  width: 60%;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.blog-item.mg {
+  margin: 0 5%;
+}
+
+.blog-item-info {
+  padding: 20px 5px 5px 10px;
+}
+.blog-item span i {
+  color: #6195ff;
+}
+
+.blog-title {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+.blog-item-info p {
+  color: #999;
+  margin-bottom: 15px;
+}
